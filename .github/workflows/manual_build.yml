@@ -36,6 +36,6 @@ jobs:
           repo_token: '${{ secrets.GITHUB_TOKEN }}'
           automatic_release_tag: '${{ inputs.tag }}'
           prerelease: ${{ inputs.tag == '' }}
-          title: '${{ inputs.tag == '' && 'Snapshot Build' || format(''Release {0}'', inputs.tag) }}'
+          title: Manual Build
           files: |
             ./build/libs/*.jar
